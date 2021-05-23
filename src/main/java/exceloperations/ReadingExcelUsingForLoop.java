@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 @SuppressWarnings("unused")
-public class ReadingExcel {
+public class ReadingExcelUsingForLoop {
 
 	@SuppressWarnings("incomplete-switch")
 	public static void main(String[] args) throws IOException {
