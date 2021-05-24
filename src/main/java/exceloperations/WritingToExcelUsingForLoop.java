@@ -34,7 +34,9 @@ public class WritingToExcelUsingForLoop {
 
 			for(int c=0;c<cols;c++) {
 				XSSFCell cell=row.createCell(c);
+
 				Object  value=empData[r][c];
+
 				if (value instanceof String){
 					cell.setCellValue((String)value);
 				}
@@ -48,7 +50,7 @@ public class WritingToExcelUsingForLoop {
 				FileOutputStream output=new FileOutputStream(filepath);
 				workbook.write(output);
 				output.close();
-				}
+			}
 		}
 		System.out.println("File Created!!");
 		workbook.close();
